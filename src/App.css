@@ -1,0 +1,132 @@
+.app {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: medium;
+  color: black;
+  text-align: start;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  border-radius: 2rem;
+  gap: 1rem;
+}
+
+.controls {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-select {
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #455f3a;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.new-game-button {
+  background-color: #8abf74;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.new-game-button:hover {
+  background-color: #455f3a;
+}
+
+.start-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 10px;
+}
+
+.start-button:hover {
+  background-color: #45a049;
+}
+.stats {
+  margin: 5px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.stats span {
+  font-weight: bold;
+  color: #8abf74;
+}
+.stats div {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding a shadow to the background */
+}
+
+.popup > .popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #455f3a;
+}
+
+.popup-content p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.popup-content .new-game-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}

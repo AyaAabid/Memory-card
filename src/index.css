@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
